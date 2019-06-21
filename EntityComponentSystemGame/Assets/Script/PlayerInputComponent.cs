@@ -1,18 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Entities;
+using Unity.Mathematics;
 
-public class PlayerInputComponent : MonoBehaviour
+public class PlayerInput : IComponentData
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public BlittableBool LeftClick;
+    public BlittableBool RightClick;
+    public float3 MousePosition;
 }
